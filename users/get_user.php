@@ -3,7 +3,7 @@ require "vendor/autoload.php";
 use Intercom\IntercomClient;
 
 $usr_id = $argv[1];
-$intercom= new IntercomClient(getenv('PAT'), null);
+$intercom= new IntercomClient(getenv('AT'), null);
 $usr = $intercom->users->getUsers(array(
   "user_id" => $usr_id
 ));
