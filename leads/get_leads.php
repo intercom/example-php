@@ -4,7 +4,7 @@ use Intercom\IntercomClient;
 
 $usr_id = $argv[1];
 
-$client = new IntercomClient(getenv('PAT'), null);
+$client = new IntercomClient(getenv('AT'), null);
 $lead= $client->leads->getLead($usr_id);
 var_dump($lead->user_id, $lead->id);
 ?>

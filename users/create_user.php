@@ -16,7 +16,7 @@ if (!array_key_exists('uid', $options) && !array_key_exists('cname', $options)){
     return;
 }
 # Initialize the Intercom client
-$intercom = new IntercomClient(getenv('PAT'), null);
+$intercom = new IntercomClient(getenv('AT'), null);
 
 # Setup the create structure
 $create_data=(["last_request_at" => time()]);
